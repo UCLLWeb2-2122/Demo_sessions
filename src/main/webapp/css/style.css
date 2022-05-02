@@ -1,0 +1,222 @@
+/*
+KLEUREN
+
+roze: rgb(191, 3, 123)
+geel: rgb(242, 158, 6)
+oranje: rgb(241, 116, 2)
+bruine: rgb(138, 47, 10)
+wit: rgb(241, 241, 241)
+
+rood: rgb(242, 7, 19)
+groen: rgb(12, 37, 13)
+grijsbruin: rgb(66, 53, 43)
+donkerbruin: rgb(41, 13, 13)
+wit: rgb(245, 243, 243)
+geel: rgb(242, 164, 54)
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 90%;
+}
+
+body {
+    background-color: rgb(190, 3, 18);
+    color: rgb(66, 53, 43);
+    font-family: verdana, sans-serif;
+}
+
+div#container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgb(245, 243, 243);
+}
+
+h1 {
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    width: 100%;
+    height: 150px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    background-color: rgb(66, 53, 43);
+}
+
+nav ul li {
+    width: 100%;
+}
+
+nav ul li#actual {
+    background-color: rgb(190, 3, 18);
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(242, 164, 54);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 1s;
+}
+
+nav ul li a:hover {
+    background-color: rgb(242, 164, 54);
+    color: rgb(66, 53, 43);
+}
+
+main {
+    display: block;
+    padding: 20px 10px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+h4 {
+    color: #777;
+    font-weight: normal;
+    font-variant: small-caps;
+}
+
+article {
+    margin: 30px 0;
+}
+
+h4 {
+    float: left;
+}
+
+.waardering {
+    float: right;
+    margin: 0;
+}
+
+.recensie p.tekst {
+    clear: both;
+    padding: 10px 0;
+    margin: 0;
+}
+
+footer a, p a {
+    color: #777;
+}
+
+p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+main ul {
+    padding-left: 20px;
+}
+
+#error {
+    border: 2px solid rgb(242, 7, 19);
+    color: rgb(242, 7, 19);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(242, 220, 220);
+    margin-bottom: 15px;
+}
+
+div#error ul {
+    list-style-type: none;
+}
+
+input.error {
+    border: 2px solid rgb(191, 3, 123);
+}
+
+form > p > label:FIRST-CHILD, form > p > span {
+    width: 30%;
+    display: inline-block;
+    text-align: right;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+form label {
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+form input[type="text"], form input[type="number"], form select {
+    width: 250px;
+}
+
+form input, form select {
+    height: 18px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 100%;
+    color: rgb(138, 47, 10);
+    background-color: rgb(300, 300, 300);
+}
+
+form select {
+    box-sizing: content-box;
+}
+
+form input[type="submit"] {
+    margin-left: calc(30% + 5px);
+    height: auto;
+    margin-top: 25px;
+}
+
+th {
+    text-align: left;
+}
+
+td, th {
+    padding: 5px 25px 5px 0;
+}
+
+strong {
+    color: rgb(12, 37, 13);
+}
+
+p img {
+    max-width: 50%;
+}
+
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        display: block
+    }
+
+    h1 {
+        background: none;
+        height: auto;
+        text-align: center;
+    }
+
+    form > p > label:FIRST-CHILD, form > p > span {
+        width: 100%;
+        display: block;
+        text-align: left;
+        padding: 10px 0 5px 0;
+    }
+
+    form input[type="text"], form input[type="number"], #error{
+        width: 95%;
+    }
+
+    form input[type="submit"] {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+}
